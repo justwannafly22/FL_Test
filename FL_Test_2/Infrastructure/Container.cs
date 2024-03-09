@@ -13,10 +13,7 @@ public sealed class Container
     private Container()
     {
         _serviceProvider = new ServiceCollection()
-            .AddDbContext<AppDbContext>(options =>
-            {
-                options.UseInMemoryDatabase("InMemoryDatabase");
-            })
+            .AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("InMemoryDatabase"))
             .AddScoped<IUserRepository, UserRepository>()
             .BuildServiceProvider();
     }
