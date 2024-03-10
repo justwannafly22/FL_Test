@@ -10,4 +10,9 @@ public class User
     public string Domain { get; set; }
 
     public virtual List<TagToUser>? TagToUsers { get; set; }
+
+    public override string ToString()
+    {
+        return string.Format($"UserId: {UserId} Name: {Name} Domain: {Domain}");
+    }
 }

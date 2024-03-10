@@ -1,4 +1,6 @@
-﻿using FL_Test_2.Repository;
+﻿using FL_Test_2.Infrastructure.Logic;
+using FL_Test_2.Infrastructure.Logic.Interfaces;
+using FL_Test_2.Repository;
 using FL_Test_2.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,6 +17,7 @@ public sealed class Container
         _serviceProvider = new ServiceCollection()
             .AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("InMemoryDatabase"))
             .AddScoped<IUserRepository, UserRepository>()
+            .AddScoped<IUserBusinessLogic, UserBusinessLogic>()
             .BuildServiceProvider();
     }
 
