@@ -46,8 +46,8 @@ public class AppDbContext : DbContext
             new TagToUser { TagId = new Guid("d0a01a5f-d484-4ee6-9dd8-d2f5072a1ec4"), UserId = new Guid("984328f4-74a6-43e6-9c21-16bf2fcad6b8"), EntityId = new Guid("a8cec4d6-869e-4c8a-b699-8880e471fdee") }, // IT 2
             new TagToUser { TagId = new Guid("55cf219a-2c88-4b9f-b1d4-5463727eb75e"), UserId = new Guid("94ece4bb-8d83-40a2-b160-f99aca926c63"), EntityId = new Guid("1bda44d8-aff6-4841-85cd-23411687ddf9") }, // Energy
             new TagToUser { TagId = new Guid("d0a01a5f-d484-4ee6-9dd8-d2f5072a1ec4"), UserId = new Guid("984328f4-74a6-43e6-9c21-16bf2fcad6b8"), EntityId = new Guid("8789a7d5-7f04-4132-8966-b885c0586648") }, // IT 2
-            new TagToUser { TagId = new Guid("3786a26c-7236-4f89-95cc-554525aa8249"), UserId = new Guid("3786a26c-7236-4f89-95cc-554525aa8249"), EntityId = new Guid("1a37dd65-dec7-4981-8f36-81326fd4701d") }, // IT
-            new TagToUser { TagId = new Guid("3786a26c-7236-4f89-95cc-554525aa8249"), UserId = new Guid("3786a26c-7236-4f89-95cc-554525aa8249"), EntityId = new Guid("b0bac326-b3ef-4dde-9867-9ccd9755e354") }, // IT
+            new TagToUser { TagId = new Guid("3786a26c-7236-4f89-95cc-554525aa8249"), UserId = new Guid("89ec9bb3-5d69-4d59-9ab8-6397d01dd924"), EntityId = new Guid("1a37dd65-dec7-4981-8f36-81326fd4701d") }, // IT
+            new TagToUser { TagId = new Guid("3786a26c-7236-4f89-95cc-554525aa8249"), UserId = new Guid("89ec9bb3-5d69-4d59-9ab8-6397d01dd924"), EntityId = new Guid("b0bac326-b3ef-4dde-9867-9ccd9755e354") }, // IT
             new TagToUser { TagId = new Guid("d0a01a5f-d484-4ee6-9dd8-d2f5072a1ec4"), UserId = new Guid("a0954fff-5499-4ffb-a5e7-bfa2fa198926"), EntityId = new Guid("a142ad30-aa4c-4a83-833f-badb434e6e4e") }, // IT 2
             new TagToUser { TagId = new Guid("d0a01a5f-d484-4ee6-9dd8-d2f5072a1ec4"), UserId = new Guid("a0954fff-5499-4ffb-a5e7-bfa2fa198926"), EntityId = new Guid("d0a01a5f-d484-4ee6-9dd8-d2f5072a1ec4") }, // IT 2
             new TagToUser { TagId = new Guid("fbed4178-2a2e-47b5-a3ed-2fa3e3c03d32"), UserId = new Guid("9b034c19-6053-421a-9718-ec726491a3f0"), EntityId = new Guid("8a81e9e0-a2d2-4484-bee9-7a7556b5f7a5") }, // Energy
@@ -60,6 +60,7 @@ public class AppDbContext : DbContext
             new TagToUser { TagId = new Guid("55cf219a-2c88-4b9f-b1d4-5463727eb75e"), UserId = new Guid("a4c4bd5e-1199-438e-bd3e-ee704bd91ee8"), EntityId = new Guid("9e5d8ee9-932f-401b-b7f1-60cfff547103") }, // Finance
             new TagToUser { TagId = new Guid("55cf219a-2c88-4b9f-b1d4-5463727eb75e"), UserId = new Guid("a4c4bd5e-1199-438e-bd3e-ee704bd91ee8"), EntityId = new Guid("e14c7398-de4e-461e-ab14-94319eb279f4") }, // Finance
             new TagToUser { TagId = new Guid("55cf219a-2c88-4b9f-b1d4-5463727eb75e"), UserId = new Guid("7f69f7fd-ac56-433f-9e39-0f77bec671ce"), EntityId = new Guid("d3ce182b-5875-4cc2-8e83-697c27a894f6") }, // Finance
+            new TagToUser { TagId = new Guid("3786a26c-7236-4f89-95cc-554525aa8249"), UserId = new Guid("bec0804c-4961-47dc-981d-4774b43c4723"), EntityId = new Guid("29edb977-a700-4225-803f-069901515a30") }, // IT
             new TagToUser { TagId = new Guid("3786a26c-7236-4f89-95cc-554525aa8249"), UserId = new Guid("3836b38d-540b-408f-81e1-39033fca42e9"), EntityId = new Guid("b765e55f-d78f-4b9d-a75c-259658229843") }, // IT
             new TagToUser { TagId = new Guid("3786a26c-7236-4f89-95cc-554525aa8249"), UserId = new Guid("138c86c1-50e3-46ec-bcf4-de758d1246c2"), EntityId = new Guid("adeaf3aa-6b53-4505-8231-38fa06cb9545") }, // IT
             new TagToUser { TagId = new Guid("3786a26c-7236-4f89-95cc-554525aa8249"), UserId = new Guid("f42f2eef-860b-48cd-9d35-2958f4be037e"), EntityId = new Guid("a564c359-1d9d-43e3-ae2c-c6ec4adb2057") }, // IT

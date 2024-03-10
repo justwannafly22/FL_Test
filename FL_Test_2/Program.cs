@@ -17,9 +17,10 @@ try
 
     var users = await userBusinessLogic!.GetAllAsync();
     users.ForEach(Console.WriteLine);
+    Console.WriteLine();
 
     #region First Task
-    Console.WriteLine("Choouse the user with UserId and Domain.");
+    Console.WriteLine("Choose the user with UserId and Domain.");
 
     Console.WriteLine("Please, enter the UserId.");
     var userId = new Guid(Console.ReadLine()!);
@@ -31,9 +32,14 @@ try
     #endregion
 
     #region Second Task
-    
+    Console.WriteLine("Choose users by User Domain.");
 
+    Console.WriteLine("Please, enter the Domain.");
+    domain = Console.ReadLine()!;
 
+    Console.WriteLine();
+    Console.WriteLine("Getting first five elements:");
+    _ = await userBusinessLogic!.GetAllByDomainAsync(position: 0, domain);
     #endregion
 }
 catch (Exception ex)

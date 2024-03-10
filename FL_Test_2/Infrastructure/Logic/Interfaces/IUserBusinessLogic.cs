@@ -6,4 +6,5 @@ public interface IUserBusinessLogic
 {
     public Task<List<User>> GetAllAsync();
     public Task<User> GetByUserIdAndDomainAsync(Guid userId, string domain);
+    public Task<List<User>> GetAllByDomainAsync(int position, string domain);
 }
