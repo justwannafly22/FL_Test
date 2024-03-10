@@ -1,7 +1,6 @@
 ﻿using FL_Test_2.Infrastructure.Logic.Interfaces;
 using FL_Test_2.Repository.Entities;
 using FL_Test_2.Repository.Interfaces;
-using Serilog;
 
 namespace FL_Test_2.Infrastructure.Logic;
 
