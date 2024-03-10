@@ -67,6 +67,28 @@ public class UserRepository (AppDbContext context) : IUserRepository
         }
     }
 
+    public async Task<List<User>> GetAllByTagValueAndDomainAsync(string tagValue, string domain)
+    {
+        try
+        {
+            var users = await GetAllUsers()
+                .Include(t => t.TagToUsers!)
+                    .ThenInclude(t => t.Tag)
+                .Where(t => t.TagToUsers!
+                    .Select(t => t.Tag)
+                    .All(t => t!.Value == tagValue && t.Domain == domain))
+                .AsNoTracking()
+                .ToListAsync();
+
+            return users;
+        }
+        catch (Exception ex)
+        {
+            Log.Error(ex, $"Error occured during retrieving users");
+            throw;
+        }
+    }
+
     private IQueryable<User> GetAllUsers() =>
         _context.Set<User>();
 
