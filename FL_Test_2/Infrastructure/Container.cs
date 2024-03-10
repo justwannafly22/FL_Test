@@ -7,7 +7,7 @@ namespace FL_Test_2.Infrastructure;
 
 public sealed class Container
 {
-    private static Container? _instance = null;
+    private static readonly Lazy<Container?> _instance = new(() => new Container());
     private readonly IServiceProvider _serviceProvider;
 
     private Container()
@@ -18,16 +18,7 @@ public sealed class Container
             .BuildServiceProvider();
     }
 
-    // ToDo: think about implementation via Lazy.
-    public static Container ServiceContainer
-    {
-        get
-        {
-            _instance ??= new Container();
-
-            return _instance;
-        }
-    }
+    public static Container ServiceContainer => _instance.Value!;
 
     public IServiceProvider Services { get { return _serviceProvider; } }
 }
