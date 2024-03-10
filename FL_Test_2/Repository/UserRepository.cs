@@ -10,8 +10,6 @@ public class UserRepository (AppDbContext context) : IUserRepository
 
     public async Task<List<User>> GetUsersAsync()
     {
-        var users = await _context.Users.ToListAsync();
-
-        return users;
+        return await _context.Users.ToListAsync();
     }
 }
